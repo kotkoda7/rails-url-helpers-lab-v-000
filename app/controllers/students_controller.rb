@@ -6,7 +6,7 @@ class StudentsController < ApplicationController
   end
 
   def show
-    @student = find
+    @student = find_by(params[id])
   end
 
   private
